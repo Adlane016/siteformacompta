@@ -1,0 +1,204 @@
+/*Page 1 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+}
+.col-2 img{
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    margin-left: 200px;
+    animation:float 3s linear infinite;
+}
+.logo p{
+    text-align: left;
+    color: #061255;
+    font-size: 10px;
+}
+.container{
+    max-width: 1300px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 200px;
+}
+.col-3 img{ 
+   width: 600px;
+   height: 575px;
+   padding: 30px 0 ;
+   animation:float 3s linear infinite;
+   border-radius: 20%;
+}
+.col-2 h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 25px 0;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 30px;
+    background-color: #0f31dd;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: background 0.5s;
+}
+.col-2 p{
+    font-family: 'Playfair Display', solid, bold;
+    font-size: 18px;
+}
+.col-2 a:hover{
+background: #ce0c0c;
+}
+.col-2  span{
+    color: #3d0af5;
+    font-family: 'Montserrat', solid, bold;
+    font-size: 21px;
+}
+.grandBlocnote
+{
+        display: flex;
+        justify-content: left;
+        align-items:center;
+        /* margin-bottom: 50px; */
+        width: 507px;
+        height: 100px;
+        margin: 0 auto 1em; 
+        font-size: 20px;
+        background-color: rgba(255,255,255,0.5);
+        margin-left: 90px;
+}
+ 
+.grandBlocnote div
+{
+    float:right;
+    color: rgb(204, 198, 198);
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+    font-size: 40px;
+   margin-top: -180px;
+}
+ 
+.grandBlocnote div:hover,
+.grandBlocnote div:hover ~ div,
+.grandBlocnote div:focus,
+.grandBlocnote div:focus ~ div
+{
+    color: orange;
+    cursor: pointer;
+}
+ 
+.grandBlocnote
+{
+    direction: rtl;
+}
+ 
+.grandBlocnote div
+{
+    float:none
+}
+/* -------------------- commentaire -------------------------- */
+.form{
+    width: 100%;
+  }
+  
+ .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  
+ .form .inputfield label{
+    width: 200px;
+    color: rgb(7, 7, 7);
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+ }
+  
+ .form .inputfield .input,
+.form .inputfield .textarea{
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgb(109, 104, 104);
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+   
+    
+  }
+  
+.form .inputfield .textarea{
+    width: 600px;
+    height: 100px;
+    resize: none;
+  }
+  .form .inputfield .input:focus,
+  .form .inputfield .textarea:focus,
+  .form .inputfield .custom_select select:focus{
+    border: 2px solid rgb(34, 6, 161);
+  }
+ .form .inputfield .btn{
+    width: 200px;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  rgb(34, 6, 161);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+   margin-left: 400px;
+  }
+  
+ .form .inputfield .btn:hover{
+    background: rgb(34, 6, 161);
+  }
+  .form .text{
+    margin-bottom: 25px;
+    font-size: 22px;
+    font:bold;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ------------------- image qui flot ----------------- */
+
+  @keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
